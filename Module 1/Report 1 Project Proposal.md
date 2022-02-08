@@ -2,7 +2,7 @@
 
 ## Team SunTech
 
-### Eli Salazar, Wesley Esquivel, Hondo Cabral, Songha Chheo, Dante Zelaya
+## Eli Salazar, Wesley Esquivel, Hondo Cabral, Songha Chheo, Dante Zelaya
 
 This week our team focused on becoming a team, outlining possible solutions to the project, and learning the possible technologies that come with building an interactive spreadsheet. We accomplished becoming a team by interacting with each other first on teams and then deciding to move our communications onto discord. During our interactions we learned about our different backgrounds. We also focused on the most elegant and effective way to meet our customers needs of creating automation and data visualization for a dataset. We decided on setting up a server from amazon web services, creating an interactive database, and running it on the server.
 
