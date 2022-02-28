@@ -1,6 +1,6 @@
 # APCV 498 - Senior Capstone
-
-## Course Objectives
+## Spring 2022 TeamSunTech
+### Course Objectives
 
 These are the activities and subjects that will be covered in this course.
 
