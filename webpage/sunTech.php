@@ -1,9 +1,42 @@
-
 <?php include "../inc/dbinfo.inc"; ?>
-<html>
-<body>
-<h1>Sample page</h1>
-<?php
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="external-links ua-brand-icons sticky-footer">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APCV498 SunTech</title>
+    <link rel="stylesheet" href="https://cdn.uadigital.arizona.edu/lib/ua-brand-icons/v1.1.0/ua-brand-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.uadigital.arizona.edu/lib/ua-bootstrap/v1.0.0-beta.26/ua-bootstrap.min.css">
+</head>
+
+<div>
+    <header id="region_header_ua" class="l-arizona-header bg-red">
+        <section class="container l-container">
+            <div class="row">
+                <a href="http://www.arizona.edu" title="The University of Arizona homepage" class="arizona-logo">
+                    <img alt="The University of Arizona Wordmark Line Logo White"
+                        src="https://cdn.uadigital.arizona.edu/logos/v1.0.0/ua_wordmark_line_logo_white_rgb.min.svg"
+                        class="arizona-line-logo">
+                </a>
+            </div>
+        </section>
+    </header>
+</div>
+
+<div>
+    <ul class="nav navbar-nav">
+        <li class="false"><a href="index.html">Home</a></li>
+        <li class="false"><a href="">Link</a></li>
+        <li class="false"><a href="">Link</a></li>
+    </ul>
+</div>
+
+<section class="container">
+    <h1>Hello, world!</h1>
+    <?php
 
   /* Connect to MySQL and select the database. */
   $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
@@ -24,36 +57,36 @@
   }
 ?>
 
-<!-- Input form -->
-<form action="<?PHP echo $_SERVER['SCRIPT_NAME'] ?>" method="POST">
-  <table border="0">
-    <tr>
-      <td>NAME</td>
-      <td>ADDRESS</td>
-    </tr>
-    <tr>
-      <td>
-        <input type="text" name="NAME" maxlength="45" size="30" />
-      </td>
-      <td>
-        <input type="text" name="ADDRESS" maxlength="90" size="60" />
-      </td>
-      <td>
-        <input type="submit" value="Add Data" />
-      </td>
-    </tr>
-  </table>
-</form>
+    <!-- Input form -->
+    <form action="<?PHP echo $_SERVER['SCRIPT_NAME'] ?>" method="POST">
+        <table border="0">
+            <tr>
+                <td>NAME</td>
+                <td>ADDRESS</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="NAME" maxlength="45" size="30" />
+                </td>
+                <td>
+                    <input type="text" name="ADDRESS" maxlength="90" size="60" />
+                </td>
+                <td>
+                    <input type="submit" value="Add Data" />
+                </td>
+            </tr>
+        </table>
+    </form>
 
-<!-- Display table data. -->
-<table border="1" cellpadding="2" cellspacing="2">
-  <tr>
-    <td>ID</td>
-    <td>NAME</td>
-    <td>ADDRESS</td>
-  </tr>
+    <!-- Display table data. -->
+    <table border="1" cellpadding="2" cellspacing="2">
+        <tr>
+            <td>ID</td>
+            <td>NAME</td>
+            <td>ADDRESS</td>
+        </tr>
 
-<?php
+        <?php
 
 $result = mysqli_query($connection, "SELECT * FROM EMPLOYEES");
 
@@ -66,17 +99,27 @@ while($query_data = mysqli_fetch_row($result)) {
 }
 ?>
 
-</table>
+    </table>
 
-<!-- Clean up. -->
-<?php
+    <!-- Clean up. -->
+    <?php
 
   mysqli_free_result($result);
   mysqli_close($connection);
 
 ?>
+</section>
+<div>
+    <footer id="footer_site">
+        <div class="container">
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdn.uadigital.arizona.edu/lib/ua-bootstrap/v1.0.0-beta.26/ua-bootstrap.min.js"></script>
 
 </body>
+
 </html>
 
 
@@ -118,5 +161,4 @@ function TableExists($tableName, $connection, $dbName) {
 
   return false;
 }
-?>                        
-                
+?>
