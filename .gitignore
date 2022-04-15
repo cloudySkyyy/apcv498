@@ -1,2 +1,4 @@
 #ignore mac info file
 .DS_Store
+webpage/.gitignore
+webpage/sunTechOLD.php
