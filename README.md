@@ -1,5 +1,13 @@
-# APCV 498 - Senior Capstone
-## Spring 2022 TeamSunTech
+# Capstone Project: K-12 Pathways
+
+### Overall Purpose and Goal
+
+- To create a database of Arizona school district information to support university targeted outreach and growth.
+- Build Applied Computing opportunities for Arizona high school students.
+- Create an every growing / changing live database to be used as a resource for educators everywhere.
+
+# Senior Capstone Course - APCV 498
+
 ### Course Objectives
 
 These are the activities and subjects that will be covered in this course.
@@ -12,13 +20,13 @@ These are the activities and subjects that will be covered in this course.
 - Think critically and creatively, both independently and with others.
 - Be aware of project management and business practices.
 
-## Course Outcomes
+### Course Outcomes
 
 These are the skills, knowledge and abilities you will have after successfully completing this course.
 
-1. Identify the type of project that they need to do to solve a problem.
-2. Working in teams and delegate responsibilities.
-3. Identify roles in the team.
-4. Communication between their peers.
-5. Thinking critically and creatively to solve a problem.
-6. Identify their tools and methodologies to solve a problem.
+- Identify the type of project that they need to do to solve a problem.
+- Working in teams and delegate responsibilities.
+- Identify roles in the team.
+- Communication between their peers.
+- Thinking critically and creatively to solve a problem.
+- Identify their tools and methodologies to solve a problem.
