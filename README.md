@@ -2,7 +2,7 @@
 
 ### Overall Purpose and Goal
 
-- To develop an interactive database of an Arizona school district information to support university targeted outreach and growth.
+- To develop an interactive database containing an Arizona school district information to support university targeted outreach and growth.
 - Build Applied Computing opportunities for Arizona high school students.
 - Create an every growing / changing live database to be used as a resource for educators everywhere.
 
