@@ -45,15 +45,15 @@
 
   $database = mysqli_select_db($connection, DB_DATABASE);
 
-  /* Ensure that the EMPLOYEES table exists. */
-  VerifyEmployeesTable($connection, DB_DATABASE);
+  /* Ensure that the school table exists. */
+  VerifySchoolTable($connection, DB_DATABASE);
 
-  /* If input fields are populated, add a row to the EMPLOYEES table. */
-  $employee_name = htmlentities($_POST['NAME']);
-  $employee_address = htmlentities($_POST['ADDRESS']);
+  /* If input fields are populated, add a row to the SCHOOL table. */
+  $school_name = htmlentities($_POST['NAME']);
+  $school_address = htmlentities($_POST['ADDRESS']);
 
-  if (strlen($employee_name) || strlen($employee_address)) {
-    AddEmployee($connection, $employee_name, $employee_address);
+  if (strlen($school_name) || strlen($school_address)) {
+    AddSchool($connection, $school_name, $school_address);
   }
 ?>
 
@@ -88,7 +88,7 @@
 
         <?php
 
-$result = mysqli_query($connection, "SELECT * FROM EMPLOYEES");
+$result = mysqli_query($connection, "SELECT * FROM SCHOOLS");
 
 while($query_data = mysqli_fetch_row($result)) {
   echo "<tr>";
@@ -125,21 +125,21 @@ while($query_data = mysqli_fetch_row($result)) {
 
 <?php
 
-/* Add an employee to the table. */
-function AddEmployee($connection, $name, $address) {
+/* Add a School to the table. */
+function AddSchool($connection, $name, $address) {
    $n = mysqli_real_escape_string($connection, $name);
    $a = mysqli_real_escape_string($connection, $address);
 
-   $query = "INSERT INTO EMPLOYEES (NAME, ADDRESS) VALUES ('$n', '$a');";
+   $query = "INSERT INTO SCHOOLS (NAME, ADDRESS) VALUES ('$n', '$a');";
 
-   if(!mysqli_query($connection, $query)) echo("<p>Error adding employee data.</p>");
+   if(!mysqli_query($connection, $query)) echo("<p>Error adding school data.</p>");
 }
 
 /* Check whether the table exists and, if not, create it. */
-function VerifyEmployeesTable($connection, $dbName) {
-  if(!TableExists("EMPLOYEES", $connection, $dbName))
+function VerifySchoolsTable($connection, $dbName) {
+  if(!TableExists("SCHOOLS", $connection, $dbName))
   {
-     $query = "CREATE TABLE EMPLOYEES (
+     $query = "CREATE TABLE SCHOOLS (
          ID int(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
          NAME VARCHAR(45),
          ADDRESS VARCHAR(90)
