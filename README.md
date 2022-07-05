@@ -1,7 +1,7 @@
+# Capstone Project: K-12 Pathways
+
 [![DeepSource](https://deepsource.io/gh/songhachheo/apcv498-capstone-project.svg/?label=active+issues&show_trend=true&token=CRQjeMpJl8vB0dpiZPg5cfSl)](https://deepsource.io/gh/songhachheo/apcv498-capstone-project/?ref=repository-badge)
 [![DeepSource](https://deepsource.io/gh/songhachheo/apcv498-capstone-project.svg/?label=resolved+issues&show_trend=true&token=CRQjeMpJl8vB0dpiZPg5cfSl)](https://deepsource.io/gh/songhachheo/apcv498-capstone-project/?ref=repository-badge)
-
-# Capstone Project: K-12 Pathways
 
 ### Overall Purpose and Goal
 
